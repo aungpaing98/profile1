@@ -1,0 +1,45 @@
+.hero{
+    padding:3rem 4rem;
+    @include breakpoint-down('medium'){
+        padding:2rem 2rem;
+    }
+
+    // Profile Picture
+    &__img{
+        flex:2;
+        >img{
+            // height:448px;
+            width:359px;
+            margin-right:2rem;
+
+            @include breakpoint-down('medium'){
+                width:100%;
+                min-width:200px;
+                margin-bottom:3rem;
+            }
+        }
+    }
+
+    // Profile Text
+    &__text{
+        flex:3;
+        padding-left:2rem;
+        >h1{
+            font-size:$xlarge;
+            @include breakpoint-down('medium'){
+                font-size:$large;
+            }
+        }
+
+        &_name{
+            color:$highlight;
+        }
+
+        &_job{
+            margin-top:8rem;
+            @include breakpoint-down('medium'){
+                margin-top:4rem;
+            }
+        }
+    }
+}

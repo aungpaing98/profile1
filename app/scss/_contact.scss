@@ -1,0 +1,18 @@
+.links {
+  flex-direction: column;
+  margin-top: 2rem;
+
+  &__item {
+    margin-left: 4rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-size: $small;
+    cursor: pointer;
+    transition: transform 300ms ease-in-out;
+
+    &:hover {
+      text-align: left;
+      transform: translateX(30px);
+    }
+  }
+}

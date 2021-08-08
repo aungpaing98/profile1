@@ -1,0 +1,25 @@
+.header {
+  font-size: $large;
+
+  @include breakpoint-down("medium") {
+    font-size: $medium_sub;
+  }
+
+  &__links {
+    width: 24rem;
+    margin: 2rem;
+    padding: 2rem 0;
+    border: 3px solid $darkblue;
+    border-radius: 56px;
+    transition: background-color, color, 300ms, ease-in-out;
+
+    @include breakpoint-down("medium") {
+      width: 17.8rem;
+    }
+
+    &:hover{
+      background-color: $darkblue;
+      color:$highlight
+    }
+  }
+}

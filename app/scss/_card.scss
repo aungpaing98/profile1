@@ -1,0 +1,73 @@
+// Skills
+.card {
+  &__item {
+    height: 12rem;
+    width: 12rem;
+    margin: 1rem;
+    background-color:$white;
+    /* From https://css.glass */
+    background: rgba(30, 30, 30, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(200, 200, 200, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(30, 30, 30, 0.1);
+
+    background-image:url('/images/html.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+  }
+
+  > .html{
+    background-image:url('/images/html.png');
+  }
+  > .css{
+    background-image:url('/images/css.png');
+  }
+  > .js{
+    background-image:url('/images/js.png');
+  }
+  > .ts{
+    background-image:url('/images/ts.png');
+  }
+  > .bs{
+    background-image:url('/images/bs.png');
+  }
+  > .react{
+    background-image:url('/images/react.png');
+  }
+}
+
+
+// Experiences
+.exp{
+    margin:2rem 0;
+
+    &__case{
+        max-width:60rem;
+        border:3px solid $white;
+        border-radius:56px;
+        padding:2rem;
+        margin-bottom: 2rem;
+
+        >.case{
+            width:80%;
+
+            >.job__title{
+                color:$highlight;
+                line-height:1.9rem;
+            }
+            >.company{
+                margin-bottom: 2rem;
+            }
+
+        }
+    }
+}
+
+.description__item{
+    line-height:1.6rem;
+    margin-bottom: 0.8rem;
+}
+

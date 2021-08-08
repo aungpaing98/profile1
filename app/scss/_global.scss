@@ -1,0 +1,80 @@
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: inherit;
+  background-color: $black;
+  color: $white;
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+a,
+a:active,
+a:hover {
+  color: $darkyellow;
+  text-decoration: none;
+  text-align: center;
+}
+
+.container {
+  padding: 4rem 8rem;
+  position: relative;
+}
+
+.homelink {
+  color: $darkyellow;
+  font-size: $medium_sub;
+  position: absolute;
+  right: 8rem;
+  display: block;
+}
+
+.title {
+  margin: 4rem 0 2rem 0;
+  font-size: $xlarge;
+
+  @include breakpoint-down("medium") {
+    font-size: $large;
+  }
+}
+
+.text {
+  line-height: 2.4375rem;
+  font-size: $medium;
+  margin: 0 4rem;
+
+  @include breakpoint-down("medium") {
+    font-size: $small;
+    margin: 0 2rem;
+    line-height: 1.8rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1.3rem;
+    @include breakpoint-down("medium") {
+      margin-bottom: 1.1rem;
+    }
+  }
+}
