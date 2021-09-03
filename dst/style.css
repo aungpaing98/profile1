@@ -24,6 +24,9 @@ body {
 .flex-jc-sb {
   justify-content: space-between;
 }
+.flex-jc-c {
+  justify-content: center;
+}
 .flex-ai-c {
   align-items: center;
 }
@@ -107,7 +110,7 @@ a:hover {
 }
 
 .hero {
-  padding: 3rem 4rem;
+  padding: 10rem 4rem;
 }
 @media (max-width: 63.93rem) {
   .hero {
@@ -192,7 +195,7 @@ a:hover {
   margin: 2rem 0;
 }
 .exp__case {
-  max-width: 60rem;
+  width: 90%;
   border: 3px solid #F2F2F2;
   border-radius: 56px;
   padding: 2rem;
@@ -217,16 +220,54 @@ a:hover {
 .links {
   flex-direction: column;
   margin-top: 2rem;
+  color: #C68719;
 }
 .links__item {
-  margin-left: 4rem;
-  margin-bottom: 1.5rem;
   text-align: left;
   font-size: 1.25rem;
   cursor: pointer;
   transition: transform 300ms ease-in-out;
+  padding: 1rem 4rem;
+}
+.links__item.email:after {
+  content: "aungpaingcha1@gmail.com";
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+}
+.links__item.github:after {
+  content: "https://github.com/aungpaing98";
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+}
+.links__item.linkedin:after {
+  content: "https://www.linkedin.com/in/aungpaing98/";
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+}
+.links__item.youtube:after {
+  content: "https://www.youtube.com/channel/UC6Vhf_yoIWXiLLJqTrU0FWA";
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
 }
 .links__item:hover {
+  visibility: hidden;
   text-align: left;
   transform: translateX(30px);
+}
+.links__item:hover:after {
+  visibility: visible;
+  display: block;
+  background-color: beige;
 }/*# sourceMappingURL=style.css.map */
