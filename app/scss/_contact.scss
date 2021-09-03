@@ -4,49 +4,24 @@
   color:$darkyellow;
 
   &__item {
-    // margin-left: 4rem;
-    // margin-bottom: 1.5rem;
     text-align: left;
     font-size: $small;
     cursor: pointer;
     transition: transform 300ms ease-in-out;
     padding:1rem 4rem;
 
+    &:after{
+      content:"Go to link";
+      position:absolute;
+      top:0;
+      visibility: hidden;
+      padding:1rem 3rem;
+      border-radius: 1rem;
+    }
+
     &.email{
       &:after{
-        content:"aungpaingcha1@gmail.com";
-        position:absolute;
-        top:0;
-        visibility: hidden;
-        padding:1rem 3rem;
-        border-radius: 1rem;
-      }
-    }
-
-    &.github{
-      &:after{
-        content:"https://github.com/aungpaing98";
-        position:absolute;
-        top:0;
-        visibility: hidden;
-        padding:1rem 3rem;
-        border-radius: 1rem;
-      }
-    }
-
-    &.linkedin{
-      &:after{
-        content:"https://www.linkedin.com/in/aungpaing98/";
-        position:absolute;
-        top:0;
-        visibility: hidden;
-        padding:1rem 3rem;
-        border-radius: 1rem;
-      }
-    }
-    &.youtube{
-      &:after{
-        content:"https://www.youtube.com/channel/UC6Vhf_yoIWXiLLJqTrU0FWA";
+        content:"copy to clipboard";
         position:absolute;
         top:0;
         visibility: hidden;

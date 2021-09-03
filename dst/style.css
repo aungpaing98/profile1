@@ -229,32 +229,16 @@ a:hover {
   transition: transform 300ms ease-in-out;
   padding: 1rem 4rem;
 }
+.links__item:after {
+  content: "Go to link";
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+}
 .links__item.email:after {
-  content: "aungpaingcha1@gmail.com";
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-  padding: 1rem 3rem;
-  border-radius: 1rem;
-}
-.links__item.github:after {
-  content: "https://github.com/aungpaing98";
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-  padding: 1rem 3rem;
-  border-radius: 1rem;
-}
-.links__item.linkedin:after {
-  content: "https://www.linkedin.com/in/aungpaing98/";
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-  padding: 1rem 3rem;
-  border-radius: 1rem;
-}
-.links__item.youtube:after {
-  content: "https://www.youtube.com/channel/UC6Vhf_yoIWXiLLJqTrU0FWA";
+  content: "copy to clipboard";
   position: absolute;
   top: 0;
   visibility: hidden;
